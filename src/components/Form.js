@@ -1,13 +1,17 @@
 import React, { useRef} from 'react'
 import { useWeather } from '../context/WeatherContext'
 function Form() {
-    const {setCity} = useWeather()
+    const {city,setCity} = useWeather()
     const inputRef = useRef(null)
     
     const handleSubmit = (e) =>  {
       e.preventDefault()
       console.log(inputRef.current.value)
       setCity(inputRef.current.value)
+    //  inputRef.current.value = ""
+      setTimeout(()=> {
+        inputRef.current.value = ""
+      },500)
     };
     
     
