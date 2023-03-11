@@ -4,7 +4,7 @@ import Detail from './Detail'
 
 function Container() {
   return (
-    <div>
+    <div className='container'>
         <Form /> <br /><br /><br />
         <Detail />
 

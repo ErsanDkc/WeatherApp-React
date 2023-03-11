@@ -1,5 +1,73 @@
 .App {
   text-align: center;
+  background: url(/img/bgc.jpg) no-repeat center/cover ;
+  height: 100vh;
+  box-sizing: border-box;
+  
+
+  
+}
+img {
+  width: 100%;
+}
+
+input {
   margin-top: 72px;
+  border: transparent;
+  height: 25px;
+  width: 220px;
+  outline: none;
+  border-bottom: 1px solid rgb(12, 9, 48);
+}
+input:focus {
+  outline: none;
+}
+button {
+  height: 28px;
+  margin-left: 4px;
+  padding: 4px;
+  border-radius: 6px;
+  border: transparent;
+  cursor: pointer;
+  background-color: rgb(165, 213, 248);
+  color: rgb(6, 50, 81);
+  letter-spacing: 2px;
+
+}
+button:hover {
+  color: white;
+    background-color: rgb(73, 166, 233);
+    transition: all 300ms linear;
+    cursor: pointer;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.city{
+  font-style: italic;
+  font-weight: 500;
+}
+.temp {
+  
+  font-size: 36px;
+  font-weight: 600;
+}
+.description {
+  
+  font-size: 20px;
+  font-style: italic;
+  text-transform: capitalize;
+}
+.image {
+  height: 80px;
+  width: 80px;
+  
+}
+img.icon {
+  font-size: 80px;
 }
 

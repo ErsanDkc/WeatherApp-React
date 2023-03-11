@@ -13,8 +13,8 @@ function Form() {
     
   return (
     <div>
-        <form onSubmit={handleSubmit} >
-          <input type="text" ref={inputRef} />
+        <form onSubmit={handleSubmit} className="form" >
+          <input type="text" ref={inputRef} autoFocus />
           <button type='submit'>Search</button>
         </form>
     </div>
