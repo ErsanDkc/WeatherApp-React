@@ -3,7 +3,7 @@ import { useWeather } from "../context/WeatherContext";
 function Detail() {
   const { weatherInfo } = useWeather();
 
-  console.log(weatherInfo);
+  
 
   return (
     <div>
@@ -24,7 +24,7 @@ function Detail() {
               src={`http://openweathermap.org/img/w/${weatherInfo?.weather[0]?.icon}.png`}
               alt="weather icon"
             />
-          }
+          } 
         </div>
       </div>
     </div>

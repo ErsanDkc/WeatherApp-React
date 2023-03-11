@@ -1,7 +1,7 @@
 import React, { useRef} from 'react'
 import { useWeather } from '../context/WeatherContext'
 function Form() {
-    const {city,setCity} = useWeather()
+    const {setCity} = useWeather()
     const inputRef = useRef(null)
     
     const handleSubmit = (e) =>  {
