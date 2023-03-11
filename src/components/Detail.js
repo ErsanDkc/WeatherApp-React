@@ -10,10 +10,11 @@ function Detail() {
     
   return (
     <div>
-        <div>
+        <div> 
+          
             {weatherInfo?.name}, {weatherInfo?.sys.country} <br /><br />
             <h1>{weatherInfo?.main.temp} <span>°C</span></h1> <br />
-            {weatherInfo?.weather[0].description}{ <img src={`http://openweathermap.org/img/w/${weatherInfo?.weather[0].icon}.png`} alt="weather icon" /> }
+            {weatherInfo?.weather[0].description}{ <img src={`http://openweathermap.org/img/w/${weatherInfo?.weather[0]?.icon}.png`} alt="weather icon" /> }
             
         </div>
     </div>
