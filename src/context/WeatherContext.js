@@ -9,7 +9,7 @@ export const WeatherProvider = ({children}) => {
     const [weatherInfo, setWeatherInfo] = useState()
     
     useEffect(() => {
-        const api = "e08f0a0055a119fc166b58d4b59aa049"
+        const api = "7e6f8f937ae7c56b66e9105a50007ff8"
         const baseURL =`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=tr&appid=${api}` 
         axios(baseURL).then(res => setWeatherInfo(res.data)).catch((e) => alert("Please Enter valid City Name"))
         
